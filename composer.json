@@ -3,9 +3,13 @@
     "silex/silex": "~2.0",
     "zendframework/zend-config": "~3.1",
     "twig/twig": "~2.0",
-    "silex/web-profiler": "^2.0"
+    "silex/web-profiler": "^2.0",
+    "dflydev/doctrine-orm-service-provider": "2.0.*",
+    "saxulum/saxulum-doctrine-orm-manager-registry-provider": "^3.1"
   },
-  "require-dev": {},
+  "require-dev": {
+
+  },
   "autoload": {
     "psr-0": {
       "Tick": "src/"

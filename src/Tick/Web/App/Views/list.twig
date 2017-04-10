@@ -1,0 +1,25 @@
+{% extends '@app/layout/layout.twig' %}
+
+{% block appContent %}
+    {{ header }}
+    <table width="95%" border="1" align="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Deneme No ?</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows  %}
+                <tr>
+                    <td>{{ row.id }}</td>
+                    <td>{{ row.test }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="2">Yok gülüm</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
