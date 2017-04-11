@@ -50,8 +50,11 @@ $app->register(new \Silex\Provider\WebProfilerServiceProvider(), [
     'profiler.mount_prefix' => '/_profiler',
 ]);
 
+$app->register(new \Saxulum\Console\Provider\ConsoleProvider());
 $app->register(new \Silex\Provider\DoctrineServiceProvider(), $config['db.config']);
-
 $app->register(new \Saxulum\DoctrineOrmManagerRegistry\Provider\DoctrineOrmManagerRegistryProvider());
+$app->register(new \Dflydev\Provider\DoctrineOrm\DoctrineOrmServiceProvider(), $config['orm.config']);
+$app->register(new \Sorien\Provider\DoctrineProfilerServiceProvider());
+
 
 return $app;

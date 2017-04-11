@@ -9,10 +9,10 @@ return [
     'app.debug' => false,
     'db.config' => [
         'dbs.options' => [
-            'haydar' => [
+            'tick' => [
                 'driver' => 'pdo_mysql',
                 'host' => 'localhost',
-                'password' => '123456',
+                'password' => 'root',
                 'user' => 'root',
                 'dbname' => 'tick',
                 'charset' => 'UTF8'
@@ -20,12 +20,32 @@ return [
             'turuvalihelen' => [
                 'driver' => 'pdo_mysql',
                 'host' => 'localhost',
-                'password' => '123456',
+                'password' => 'root',
                 'user' => 'root',
                 'dbname' => 'tick_logs',
                 'charset' => 'UTF8'
             ]
         ]
+    ],
+    'orm.config' => [
+        'orm.proxies_dir' => APP_ROOT_DIR . '/var/cache/proxies',
+        'orm.auto_generate_proxies' => true,
+        'orm.default_cache' => [
+            'driver' => 'array'
+        ],
+        'orm.ems.options' => [
+            'tick' => [
+                'connection' => 'tick',
+                'mappings' => [
+                    [
+                        'type' => 'annotation',
+                        'namespace' => 'Tick\Entity',
+                        'path' => APP_ROOT_DIR . '/src/Tick/Entity',
+                        'use_simple_annotation_reader' => false,
+                        'alias' => 'Tick'
+                    ]
+                ]
+            ]
+        ]
     ]
-
 ];

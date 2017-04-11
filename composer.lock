@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf729e576d7f913e2047dc1108128a6c",
+    "content-hash": "05344cc87581949ac5ffc56e541b60db",
     "packages": [
         {
             "name": "dflydev/doctrine-orm-service-provider",
@@ -664,6 +664,54 @@
             "time": "2016-12-18T15:42:34+00:00"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3|^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": []
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2016-04-29T12:21:54+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v2.0.10",
             "source": {
@@ -852,6 +900,170 @@
                 "psr-3"
             ],
             "time": "2016-10-10T12:19:37+00:00"
+        },
+        {
+            "name": "saxulum/saxulum-classfinder",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saxulum/saxulum-classfinder.git",
+                "reference": "3cdab7011dcc381dad6224646ed703b52ffdcbea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saxulum/saxulum-classfinder/zipball/3cdab7011dcc381dad6224646ed703b52ffdcbea",
+                "reference": "3cdab7011dcc381dad6224646ed703b52ffdcbea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Saxulum\\ClassFinder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Zogg",
+                    "email": "dominik.zogg@gmail.com"
+                }
+            ],
+            "description": "Saxulum ClassFinder",
+            "keywords": [
+                "class",
+                "classfinder"
+            ],
+            "time": "2015-08-24T19:15:24+00:00"
+        },
+        {
+            "name": "saxulum/saxulum-console",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saxulum/saxulum-console.git",
+                "reference": "9fbff9cd6ba71c844c1638c32b1991617871f82a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saxulum/saxulum-console/zipball/9fbff9cd6ba71c844c1638c32b1991617871f82a",
+                "reference": "9fbff9cd6ba71c844c1638c32b1991617871f82a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3,<8.0",
+                "pimple/pimple": ">=2.1,<4",
+                "saxulum/saxulum-classfinder": "~1.1,>=1.1.1",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/finder": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Saxulum\\Console": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Zogg",
+                    "email": "dominik.zogg@gmail.com"
+                }
+            ],
+            "description": "Saxulum Console Provider",
+            "keywords": [
+                "console",
+                "pimple",
+                "saxulum",
+                "silex"
+            ],
+            "time": "2015-12-01T11:57:28+00:00"
+        },
+        {
+            "name": "saxulum/saxulum-doctrine-orm-commands",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saxulum/saxulum-doctrine-orm-commands.git",
+                "reference": "f09b0a90208317b5f8c30ef7d13574b50be9bc0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saxulum/saxulum-doctrine-orm-commands/zipball/f09b0a90208317b5f8c30ef7d13574b50be9bc0f",
+                "reference": "f09b0a90208317b5f8c30ef7d13574b50be9bc0f",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.3",
+                "php": ">=5.3.3,<8.0",
+                "symfony/console": "~2.3"
+            },
+            "require-dev": {
+                "dflydev/doctrine-orm-service-provider": "~1.0,>=1.0.4",
+                "phpunit/phpunit": "3.7.*",
+                "saxulum/saxulum-console": "~2.0",
+                "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~2.2",
+                "silex/silex": "~1.1"
+            },
+            "suggest": {
+                "dflydev/doctrine-orm-service-provider": "~1.0.4",
+                "saxulum/saxulum-console": "~2.0",
+                "saxulum/saxulum-doctrine-orm-manager-registry-provider": "~2.2",
+                "silex/silex": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Saxulum\\DoctrineOrmCommands\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Dominik Zogg",
+                    "email": "dominik.zogg@gmail.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Saxulum Doctrine ORM Commands",
+            "keywords": [
+                "cilex",
+                "commands",
+                "doctrine",
+                "orm",
+                "pimple",
+                "saxulum",
+                "silex"
+            ],
+            "time": "2016-01-17T12:54:23+00:00"
         },
         {
             "name": "saxulum/saxulum-doctrine-orm-manager-registry-provider",
@@ -1058,40 +1270,85 @@
             "time": "2017-04-08T17:30:17+00:00"
         },
         {
-            "name": "symfony/console",
-            "version": "v3.2.7",
+            "name": "sorien/silex-dbal-profiler",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "c30243cc51f726812be3551316b109a2f5deaf8d"
+                "url": "https://github.com/Sorien/silex-dbal-profiler.git",
+                "reference": "315300ed841543bbda4521aa03bbf2b3f515cf1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c30243cc51f726812be3551316b109a2f5deaf8d",
-                "reference": "c30243cc51f726812be3551316b109a2f5deaf8d",
+                "url": "https://api.github.com/repos/Sorien/silex-dbal-profiler/zipball/315300ed841543bbda4521aa03bbf2b3f515cf1e",
+                "reference": "315300ed841543bbda4521aa03bbf2b3f515cf1e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
-                "symfony/debug": "~2.8|~3.0",
+                "silex/silex": "~2.0",
+                "silex/web-profiler": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sorien": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stanislav Turza",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Doctrine DBAL Profiler for Silex",
+            "keywords": [
+                "dbal",
+                "doctrine",
+                "profiler",
+                "silex"
+            ],
+            "time": "2016-05-19T13:19:25+00:00"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.8.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "3d3e4fa5f0614c8e45220e5de80332322e33bd90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/3d3e4fa5f0614c8e45220e5de80332322e33bd90",
+                "reference": "3d3e4fa5f0614c8e45220e5de80332322e33bd90",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/filesystem": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
+                "symfony/event-dispatcher": "~2.1|~3.0.0",
+                "symfony/process": "~2.1|~3.0.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -1118,7 +1375,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-04-04T14:33:42+00:00"
+            "time": "2016-09-06T10:55:00+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1236,6 +1493,55 @@
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
             "time": "2017-04-04T07:26:27+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v3.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "b20900ce5ea164cd9314af52725b0bb5a758217a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/b20900ce5ea164cd9314af52725b0bb5a758217a",
+                "reference": "b20900ce5ea164cd9314af52725b0bb5a758217a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-20T09:32:19+00:00"
         },
         {
             "name": "symfony/http-foundation",

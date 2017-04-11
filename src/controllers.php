@@ -1,20 +1,35 @@
 <?php
 
 $app->get('/', function () use ($app) {
-    $mainDB = $app->getDoctrine()->getConnection('haydar');
+    $em = $app->getDoctrine()->getManager('tick');
 
-    foreach(range(1,50) as $step){
-        $mainDB->insert('test',['test'=>$step.' nci denememiz']);
+    $limit = 100;
+    $i = 1;
+
+    $faker = Faker\Factory::create();
+
+    while ($i <= 100) {
+        $user = new \Tick\Entity\User();
+        $user->setUsername($faker->userName);
+        $user->setName($faker->name);
+        $user->setLastName($faker->lastName);
+        $user->setFullname($user->getName() . ' ' . $user->getLastName());
+        $user->setEmail($faker->email);
+        $user->setPassword($faker->password);
+        $user->setSalt($faker->password);
+
+        $em->persist($user);
+
+        if ($i % 35 === 0) {
+            $em->flush();
+        }
+
+        $i++;
     }
 
-    $getRows = $mainDB->fetchAll('select * from bostablo');
+    $em->flush();
 
-    $data = [
-        'rows' => $getRows,
-        'header' => 'merba'
-    ];
-
-    return $app->getTwig()->render('@app/list.twig', $data);
+    return $app->getTwig()->render('@app/list.twig');
 });
 
 $app->get('/hello/{name}', function ($name) use ($app) {
