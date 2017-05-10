@@ -55,6 +55,17 @@ $app->register(new \Silex\Provider\DoctrineServiceProvider(), $config['db.config
 $app->register(new \Saxulum\DoctrineOrmManagerRegistry\Provider\DoctrineOrmManagerRegistryProvider());
 $app->register(new \Dflydev\Provider\DoctrineOrm\DoctrineOrmServiceProvider(), $config['orm.config']);
 $app->register(new \Sorien\Provider\DoctrineProfilerServiceProvider());
+$app->register(new Sorien\Provider\PimpleDumpProvider());
 
+
+$app->extend('doctrine', function (\Saxulum\DoctrineOrmManagerRegistry\Doctrine\ManagerRegistry $managerRegistry) {
+    \Doctrine\DBAL\Types\Type::addType('uuid', 'Ramsey\Uuid\Doctrine\UuidType');
+
+    return $managerRegistry;
+});
+
+$app['tick.service.randomGenerator'] = function () {
+    return new \Tick\Service\RandomGenerator();
+};
 
 return $app;

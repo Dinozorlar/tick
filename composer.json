@@ -9,7 +9,9 @@
     "saxulum/saxulum-doctrine-orm-commands": "~1.2,>=1.2.2",
     "saxulum/saxulum-console": "~3.1",
     "fzaninotto/faker": "^1.6",
-    "sorien/silex-dbal-profiler": "~2.0"
+    "sorien/silex-dbal-profiler": "~2.0",
+    "ramsey/uuid-doctrine": "^1.3",
+    "sorien/silex-pimple-dumper": "~2.0"
   },
   "require-dev": {
 

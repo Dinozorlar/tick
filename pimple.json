@@ -1,0 +1,678 @@
+[
+    {
+        "name": "request.http_port",
+        "type": "int",
+        "value": 80
+    },
+    {
+        "name": "request.https_port",
+        "type": "int",
+        "value": 443
+    },
+    {
+        "name": "debug",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "charset",
+        "type": "string",
+        "value": "UTF-8"
+    },
+    {
+        "name": "logger",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "resolver",
+        "type": "class",
+        "value": "Silex\\ServiceControllerResolver"
+    },
+    {
+        "name": "argument_metadata_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\ControllerMetadata\\ArgumentMetadataFactory"
+    },
+    {
+        "name": "argument_value_resolvers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "argument_resolver",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Controller\\ArgumentResolver"
+    },
+    {
+        "name": "kernel",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\HttpKernel"
+    },
+    {
+        "name": "request_stack",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpFoundation\\RequestStack"
+    },
+    {
+        "name": "dispatcher",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Debug\\TraceableEventDispatcher"
+    },
+    {
+        "name": "callback_resolver",
+        "type": "class",
+        "value": "Silex\\CallbackResolver"
+    },
+    {
+        "name": "route_class",
+        "type": "string",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "route_factory",
+        "type": "class",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "routes_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RouteCollection"
+    },
+    {
+        "name": "routes",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RouteCollection"
+    },
+    {
+        "name": "url_generator",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\Generator\\UrlGenerator"
+    },
+    {
+        "name": "request_matcher",
+        "type": "class",
+        "value": "Silex\\Provider\\Routing\\RedirectableUrlMatcher"
+    },
+    {
+        "name": "request_context",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RequestContext"
+    },
+    {
+        "name": "controllers",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "controllers_factory",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "routing.listener",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\EventListener\\RouterListener"
+    },
+    {
+        "name": "exception_handler",
+        "type": "class",
+        "value": "Silex\\ExceptionHandler"
+    },
+    {
+        "name": "twig.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.form.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.path",
+        "type": "string",
+        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/src\/Tick\/views"
+    },
+    {
+        "name": "twig.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig",
+        "type": "class",
+        "value": "Twig_Environment"
+    },
+    {
+        "name": "twig.loader.filesystem",
+        "type": "class",
+        "value": "Twig_Loader_Filesystem"
+    },
+    {
+        "name": "twig.loader.array",
+        "type": "class",
+        "value": "Twig_Loader_Array"
+    },
+    {
+        "name": "twig.loader",
+        "type": "class",
+        "value": "Twig_Loader_Chain"
+    },
+    {
+        "name": "twig.environment_factory",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "twig.runtime.httpkernel",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\Extension\\HttpKernelRuntime"
+    },
+    {
+        "name": "twig.runtimes",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.runtime_loader",
+        "type": "class",
+        "value": "Silex\\Provider\\Twig\\RuntimeLoader"
+    },
+    {
+        "name": "fragment.handler",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Fragment\\FragmentHandler"
+    },
+    {
+        "name": "fragment.renderer.inline",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Fragment\\InlineFragmentRenderer"
+    },
+    {
+        "name": "fragment.renderer.hinclude",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Fragment\\HIncludeFragmentRenderer"
+    },
+    {
+        "name": "fragment.listener",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\EventListener\\FragmentListener"
+    },
+    {
+        "name": "uri_signer",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\UriSigner"
+    },
+    {
+        "name": "uri_signer.secret",
+        "type": "string",
+        "value": "7ac66f12d7ed57ef6ace300ac52f24fe"
+    },
+    {
+        "name": "fragment.path",
+        "type": "string",
+        "value": "\/_fragment"
+    },
+    {
+        "name": "fragment.renderer.hinclude.global_template",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "fragment.renderers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "profiler.mount_prefix",
+        "type": "string",
+        "value": "\/_profiler"
+    },
+    {
+        "name": "data_collector.templates",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "data_collectors",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "twig.profiler.profile",
+        "type": "class",
+        "value": "Twig_Profiler_Profile"
+    },
+    {
+        "name": "web_profiler.controller.profiler",
+        "type": "class",
+        "value": "Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController"
+    },
+    {
+        "name": "web_profiler.controller.router",
+        "type": "class",
+        "value": "Symfony\\Bundle\\WebProfilerBundle\\Controller\\RouterController"
+    },
+    {
+        "name": "web_profiler.controller.exception",
+        "type": "class",
+        "value": "Symfony\\Bundle\\WebProfilerBundle\\Controller\\ExceptionController"
+    },
+    {
+        "name": "web_profiler.toolbar.listener",
+        "type": "class",
+        "value": "Symfony\\Bundle\\WebProfilerBundle\\EventListener\\WebDebugToolbarListener"
+    },
+    {
+        "name": "profiler",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Profiler\\Profiler"
+    },
+    {
+        "name": "profiler.storage",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Profiler\\FileProfilerStorage"
+    },
+    {
+        "name": "profiler.request_matcher",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "profiler.only_exceptions",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "name": "profiler.only_master_requests",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "name": "web_profiler.debug_toolbar.enable",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "web_profiler.debug_toolbar.position",
+        "type": "string",
+        "value": "bottom"
+    },
+    {
+        "name": "web_profiler.debug_toolbar.intercept_redirects",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "name": "profiler.listener",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\EventListener\\ProfilerListener"
+    },
+    {
+        "name": "stopwatch",
+        "type": "class",
+        "value": "Symfony\\Component\\Stopwatch\\Stopwatch"
+    },
+    {
+        "name": "code.file_link_format",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\Debug\\FileLinkFormatter"
+    },
+    {
+        "name": "profiler.templates_path",
+        "type": "string",
+        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/vendor\/symfony\/web-profiler-bundle\/Resources\/views"
+    },
+    {
+        "name": "profiler.templates_path.debug",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "profiler.cache_dir",
+        "type": "string",
+        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/var\/cache\/profiler"
+    },
+    {
+        "name": "console.cache",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "console.command.paths",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "console.commands",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "console",
+        "type": "class",
+        "value": "Saxulum\\Console\\Console\\ConsoleApplication"
+    },
+    {
+        "name": "console.command.search",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "db.default_options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "dbs.options.initializer",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "dbs",
+        "type": "container",
+        "value": [
+            {
+                "name": "tick",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Connection"
+            },
+            {
+                "name": "turuvalihelen",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Connection"
+            }
+        ]
+    },
+    {
+        "name": "dbs.config",
+        "type": "container",
+        "value": [
+            {
+                "name": "tick",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Configuration"
+            },
+            {
+                "name": "turuvalihelen",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Configuration"
+            }
+        ]
+    },
+    {
+        "name": "dbs.event_manager",
+        "type": "container",
+        "value": [
+            {
+                "name": "tick",
+                "type": "class",
+                "value": "Doctrine\\Common\\EventManager"
+            },
+            {
+                "name": "turuvalihelen",
+                "type": "class",
+                "value": "Doctrine\\Common\\EventManager"
+            }
+        ]
+    },
+    {
+        "name": "db",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Connection"
+    },
+    {
+        "name": "db.config",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Configuration"
+    },
+    {
+        "name": "db.event_manager",
+        "type": "class",
+        "value": "Doctrine\\Common\\EventManager"
+    },
+    {
+        "name": "dbs.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "doctrine",
+        "type": "class",
+        "value": "Saxulum\\DoctrineOrmManagerRegistry\\Doctrine\\ManagerRegistry"
+    },
+    {
+        "name": "orm.ems.factory",
+        "type": "container",
+        "value": [
+            {
+                "name": "tick",
+                "type": "closure",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "name": "orm.proxies_dir",
+        "type": "string",
+        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/var\/cache\/proxies"
+    },
+    {
+        "name": "orm.proxies_namespace",
+        "type": "string",
+        "value": "DoctrineProxy"
+    },
+    {
+        "name": "orm.auto_generate_proxies",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "orm.default_cache",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "orm.custom.functions.string",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "orm.custom.functions.numeric",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "orm.custom.functions.datetime",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "orm.custom.hydration_modes",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "orm.class_metadata_factory_name",
+        "type": "string",
+        "value": "Doctrine\\ORM\\Mapping\\ClassMetadataFactory"
+    },
+    {
+        "name": "orm.default_repository_class",
+        "type": "string",
+        "value": "Doctrine\\ORM\\EntityRepository"
+    },
+    {
+        "name": "orm.em.default_options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "orm.ems.options.initializer",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.em_name_from_param_key",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.ems",
+        "type": "container",
+        "value": [
+            {
+                "name": "tick",
+                "type": "class",
+                "value": "Doctrine\\ORM\\EntityManager"
+            }
+        ]
+    },
+    {
+        "name": "orm.ems.config",
+        "type": "container",
+        "value": [
+            {
+                "name": "tick",
+                "type": "class",
+                "value": "Doctrine\\ORM\\Configuration"
+            }
+        ]
+    },
+    {
+        "name": "orm.cache.configurer",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.locator",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.backing_memcache",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.memcache",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.backing_memcached",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.memcached",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.backing_redis",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.redis",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.array",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.apc",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.xcache",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.filesystem",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory.couchbase",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.cache.factory",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.mapping_driver_chain.locator",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.mapping_driver_chain.factory",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.add_mapping_driver",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "orm.strategy.naming",
+        "type": "class",
+        "value": "Doctrine\\ORM\\Mapping\\DefaultNamingStrategy"
+    },
+    {
+        "name": "orm.strategy.quote",
+        "type": "class",
+        "value": "Doctrine\\ORM\\Mapping\\DefaultQuoteStrategy"
+    },
+    {
+        "name": "orm.entity_listener_resolver",
+        "type": "class",
+        "value": "Doctrine\\ORM\\Mapping\\DefaultEntityListenerResolver"
+    },
+    {
+        "name": "orm.repository_factory",
+        "type": "class",
+        "value": "Doctrine\\ORM\\Repository\\DefaultRepositoryFactory"
+    },
+    {
+        "name": "orm.em",
+        "type": "class",
+        "value": "Doctrine\\ORM\\EntityManager"
+    },
+    {
+        "name": "orm.em.config",
+        "type": "class",
+        "value": "Doctrine\\ORM\\Configuration"
+    },
+    {
+        "name": "orm.ems.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "tick.service.randomGenerator",
+        "type": "class",
+        "value": "Tick\\Service\\RandomGenerator"
+    },
+    {
+        "name": "dbs.default",
+        "type": "string",
+        "value": "tick"
+    },
+    {
+        "name": "twig.app_variable",
+        "type": "class",
+        "value": "Symfony\\Bridge\\Twig\\AppVariable"
+    }
+]

@@ -2,6 +2,7 @@
 namespace Tick\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Tick\Traits\UuidableEntityTrait;
 
 /**
  * Class User
@@ -11,12 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class User
 {
-    /**
-     * @ORM\Id()
-     * @ORM\Column(type="bigint")
-     * @ORM\GeneratedValue()
-     */
-    protected $id;
+    use UuidableEntityTrait;
 
     /**
      * @ORM\Column(type="datetime")
