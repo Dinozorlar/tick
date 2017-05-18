@@ -11,7 +11,8 @@
     "fzaninotto/faker": "^1.6",
     "sorien/silex-dbal-profiler": "~2.0",
     "ramsey/uuid-doctrine": "^1.3",
-    "sorien/silex-pimple-dumper": "~2.0"
+    "sorien/silex-pimple-dumper": "~2.0",
+    "symfony/security": "^3.2"
   },
   "require-dev": {
 

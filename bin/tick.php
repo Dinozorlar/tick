@@ -5,7 +5,7 @@ $app = require dirname(__DIR__) . '/src/app.php';
 $cli = new \Saxulum\Console\Console\ConsoleApplication($app);
 
 $commands = [
-    new \Tick\ConsoleCommands\CreateDefaultUsers()
+    $app['tick.command.createDefaultUsers']
 ];
 
 $cli->getHelperSet()->set(

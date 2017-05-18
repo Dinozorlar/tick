@@ -1,6 +1,7 @@
 <?php
 
 $app->get('/', function () use ($app) {
+    return $app->getTwig()->render('@app/list.twig');
     $em = $app->getDoctrine()->getManager('tick');
 
     $limit = 100;

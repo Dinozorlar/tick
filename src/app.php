@@ -24,6 +24,27 @@ $config = $config->toArray();
 $app = new \Tick\Application();
 $app['debug'] = $config['app.debug'];
 
+$app->register(new \Silex\Provider\ServiceControllerServiceProvider());
+$app->register(new \Silex\Provider\HttpFragmentServiceProvider());
+$app->register(new \Saxulum\Console\Provider\ConsoleProvider());
+$app->register(new \Silex\Provider\DoctrineServiceProvider(), $config['db.config']);
+$app->register(new \Saxulum\DoctrineOrmManagerRegistry\Provider\DoctrineOrmManagerRegistryProvider());
+$app->register(new \Dflydev\Provider\DoctrineOrm\DoctrineOrmServiceProvider(), $config['orm.config']);
+
+$app->register(new Silex\Provider\SessionServiceProvider());
+$app->register(new Silex\Provider\SecurityServiceProvider(), [
+    'security.firewalls' => [
+        'profiler' => [
+            'pattern' => '^/(_(profiler|wdt)|css|images|js)/',
+            'security' => false,
+        ],
+        'site' => [
+            'pattern' => '^/',
+            'anonymous' => true
+        ]
+    ]
+]);
+
 $app->register(new \Silex\Provider\TwigServiceProvider(), $config['twig']);
 
 $app->extend('twig', function (\Twig_Environment $twig) use ($app, $config) {
@@ -43,20 +64,11 @@ $app->extend('twig', function (\Twig_Environment $twig) use ($app, $config) {
     return $twig;
 });
 
-$app->register(new \Silex\Provider\ServiceControllerServiceProvider());
-$app->register(new \Silex\Provider\HttpFragmentServiceProvider());
 $app->register(new \Silex\Provider\WebProfilerServiceProvider(), [
     'profiler.cache_dir' => APP_ROOT_DIR.'/var/cache/profiler',
     'profiler.mount_prefix' => '/_profiler',
 ]);
-
-$app->register(new \Saxulum\Console\Provider\ConsoleProvider());
-$app->register(new \Silex\Provider\DoctrineServiceProvider(), $config['db.config']);
-$app->register(new \Saxulum\DoctrineOrmManagerRegistry\Provider\DoctrineOrmManagerRegistryProvider());
-$app->register(new \Dflydev\Provider\DoctrineOrm\DoctrineOrmServiceProvider(), $config['orm.config']);
 $app->register(new \Sorien\Provider\DoctrineProfilerServiceProvider());
-$app->register(new Sorien\Provider\PimpleDumpProvider());
-
 
 $app->extend('doctrine', function (\Saxulum\DoctrineOrmManagerRegistry\Doctrine\ManagerRegistry $managerRegistry) {
     \Doctrine\DBAL\Types\Type::addType('uuid', 'Ramsey\Uuid\Doctrine\UuidType');
@@ -67,5 +79,17 @@ $app->extend('doctrine', function (\Saxulum\DoctrineOrmManagerRegistry\Doctrine\
 $app['tick.service.randomGenerator'] = function () {
     return new \Tick\Service\RandomGenerator();
 };
+
+$app['tick.command.createDefaultUsers'] = function (\Tick\Application $app) {
+    $command = new \Tick\ConsoleCommands\CreateDefaultUsers();
+    $command->setRandomGenerator($app['tick.service.randomGenerator']);
+    $command->setDbal($app['doctrine']->getConnection());
+    $command->setPasswordEncoder($app['security.default_encoder']);
+    $command->setEm($app['doctrine']->getManager());
+
+    return $command;
+};
+
+$app->register(new Sorien\Provider\PimpleDumpProvider());
 
 return $app;
