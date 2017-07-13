@@ -811,6 +811,26 @@
         "value": ""
     },
     {
+        "name": "security.remember_me.response_listener",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Http\\RememberMe\\ResponseListener"
+    },
+    {
+        "name": "security.remember_me.service._proto",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "security.authentication_listener.remember_me._proto",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "security.authentication_provider.remember_me._proto",
+        "type": "closure",
+        "value": ""
+    },
+    {
         "name": "twig.options",
         "type": "array",
         "value": ""
@@ -1016,6 +1036,11 @@
         "value": "Tick\\Service\\RandomGenerator"
     },
     {
+        "name": "tick.user.provider",
+        "type": "class",
+        "value": "Tick\\Service\\UserSecurityProvider"
+    },
+    {
         "name": "tick.command.createDefaultUsers",
         "type": "class",
         "value": "Tick\\ConsoleCommands\\CreateDefaultUsers"
@@ -1023,7 +1048,42 @@
     {
         "name": "security.user_provider.site",
         "type": "class",
-        "value": "Symfony\\Component\\Security\\Core\\User\\InMemoryUserProvider"
+        "value": "Tick\\Service\\UserSecurityProvider"
+    },
+    {
+        "name": "orm.ems.default",
+        "type": "string",
+        "value": "tick"
+    },
+    {
+        "name": "orm.cache.instances.tick.metadata",
+        "type": "class",
+        "value": "Doctrine\\Common\\Cache\\ArrayCache"
+    },
+    {
+        "name": "orm.cache.instances.tick.query",
+        "type": "class",
+        "value": "Doctrine\\Common\\Cache\\ArrayCache"
+    },
+    {
+        "name": "orm.cache.instances.tick.result",
+        "type": "class",
+        "value": "Doctrine\\Common\\Cache\\ArrayCache"
+    },
+    {
+        "name": "orm.cache.instances.tick.hydration",
+        "type": "class",
+        "value": "Doctrine\\Common\\Cache\\ArrayCache"
+    },
+    {
+        "name": "orm.mapping_driver_chain.instances.tick",
+        "type": "class",
+        "value": "Doctrine\\Common\\Persistence\\Mapping\\Driver\\MappingDriverChain"
+    },
+    {
+        "name": "dbs.default",
+        "type": "string",
+        "value": "tick"
     },
     {
         "name": "security.context_listener.site",
@@ -1031,19 +1091,44 @@
         "value": "Symfony\\Component\\Security\\Http\\Firewall\\ContextListener"
     },
     {
-        "name": "security.authentication_listener.site.anonymous",
+        "name": "security.entry_point.site.http",
         "type": "class",
-        "value": "Symfony\\Component\\Security\\Http\\Firewall\\AnonymousAuthenticationListener"
+        "value": "Symfony\\Component\\Security\\Http\\EntryPoint\\BasicAuthenticationEntryPoint"
     },
     {
-        "name": "security.authentication_provider.site.anonymous",
+        "name": "security.authentication_listener.site.http",
         "type": "class",
-        "value": "Symfony\\Component\\Security\\Core\\Authentication\\Provider\\AnonymousAuthenticationProvider"
+        "value": "Symfony\\Component\\Security\\Http\\Firewall\\BasicAuthenticationListener"
+    },
+    {
+        "name": "security.authentication_provider.site.dao",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Core\\Authentication\\Provider\\DaoAuthenticationProvider"
+    },
+    {
+        "name": "security.remember_me.service.site",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Http\\RememberMe\\TokenBasedRememberMeServices"
+    },
+    {
+        "name": "security.authentication_listener.site.remember_me",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Http\\Firewall\\RememberMeListener"
+    },
+    {
+        "name": "security.authentication_provider.site.remember_me",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Core\\Authentication\\Provider\\RememberMeAuthenticationProvider"
     },
     {
         "name": "security.entry_point.site.form",
         "type": "class",
         "value": "Symfony\\Component\\Security\\Http\\EntryPoint\\FormAuthenticationEntryPoint"
+    },
+    {
+        "name": "security.authentication_listener.site.form",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Http\\Firewall\\UsernamePasswordFormAuthenticationListener"
     },
     {
         "name": "security.exception_listener.site",
@@ -1056,9 +1141,14 @@
         "value": ""
     },
     {
-        "name": "dbs.default",
-        "type": "string",
-        "value": "tick"
+        "name": "security.authentication.success_handler.site",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Http\\Authentication\\DefaultAuthenticationSuccessHandler"
+    },
+    {
+        "name": "security.authentication.failure_handler.site",
+        "type": "class",
+        "value": "Symfony\\Component\\Security\\Http\\Authentication\\DefaultAuthenticationFailureHandler"
     },
     {
         "name": "twig.app_variable",
