@@ -147,7 +147,7 @@
     {
         "name": "uri_signer.secret",
         "type": "string",
-        "value": "7ac66f12d7ed57ef6ace300ac52f24fe"
+        "value": "82d9c6e1df5a657a618d6886ebbb79aa"
     },
     {
         "name": "fragment.path",
@@ -286,7 +286,7 @@
     {
         "name": "orm.proxies_dir",
         "type": "string",
-        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/var\/cache\/proxies"
+        "value": "\/mnt\/hgfs\/www\/dinozorlar\/tick\/var\/cache\/proxies"
     },
     {
         "name": "orm.proxies_namespace",
@@ -823,12 +823,42 @@
     {
         "name": "twig.path",
         "type": "string",
-        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/src\/Tick\/views"
+        "value": "\/mnt\/hgfs\/www\/dinozorlar\/tick\/src\/Tick\/views"
     },
     {
         "name": "twig.templates",
         "type": "array",
         "value": ""
+    },
+    {
+        "name": "twig.date.format",
+        "type": "string",
+        "value": "F j, Y H:i"
+    },
+    {
+        "name": "twig.date.interval_format",
+        "type": "string",
+        "value": "%d days"
+    },
+    {
+        "name": "twig.date.timezone",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "twig.number_format.decimals",
+        "type": "int",
+        "value": 0
+    },
+    {
+        "name": "twig.number_format.decimal_point",
+        "type": "string",
+        "value": "."
+    },
+    {
+        "name": "twig.number_format.thousands_separator",
+        "type": "string",
+        "value": ","
     },
     {
         "name": "twig",
@@ -968,7 +998,7 @@
     {
         "name": "profiler.templates_path",
         "type": "string",
-        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/vendor\/symfony\/web-profiler-bundle\/Resources\/views"
+        "value": "\/mnt\/hgfs\/www\/dinozorlar\/tick\/vendor\/symfony\/web-profiler-bundle\/Resources\/views"
     },
     {
         "name": "profiler.templates_path.debug",
@@ -978,7 +1008,7 @@
     {
         "name": "profiler.cache_dir",
         "type": "string",
-        "value": "\/Users\/cnkt\/Downloads\/devmac\/tick\/var\/cache\/profiler"
+        "value": "\/mnt\/hgfs\/www\/dinozorlar\/tick\/var\/cache\/profiler"
     },
     {
         "name": "tick.service.randomGenerator",
